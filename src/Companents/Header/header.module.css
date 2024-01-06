@@ -1,0 +1,40 @@
+header{
+    background-color: rgb(255, 116, 4);
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+header li a{
+    cursor: pointer;
+}
+.contact{
+    color: rgb(255, 116, 4);
+    background-color: #fff;
+    padding: 10px;
+    transition: 1s;
+    border: 1px solid rgb(255, 116, 4);
+    font-weight: 600;
+    border-radius: 10px;
+}
+.contact:hover{
+    color: black;
+    background-color: rgb(255, 116, 4);
+}
+.foody{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+.dropdown-toggle:hover .dropdown-menu.show{
+    display: block !important;
+}
+.navlink{
+    color: #fff !important;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    transition: 1s;
+}
+.navlink:hover{
+    color: black !important;
+}

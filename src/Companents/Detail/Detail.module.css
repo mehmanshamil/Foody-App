@@ -1,0 +1,65 @@
+#detail{
+    
+}
+
+#detail h2{
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 116, 4);
+}
+.backBtn{
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(255, 116, 4);
+    border-radius: 10px;
+    border: 1px solid rgb(255, 116, 4);
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.backBtn svg{
+    font-size: 1.2rem;
+}
+.backBtn:hover{
+    color: rgb(255, 116, 4);
+    background-color: #fff;
+}
+.discount{
+    color: #fff;
+    background-color: red;
+    max-width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    align-self: flex-start;
+    padding: 12px;
+}
+.addBtn{
+    margin-top: 2rem;
+    color: #fff;
+    background-color: green;
+    max-width: 250px;
+    padding: 15px 25px;
+    border-radius: 10px;
+    transition: 1s;
+    border: 1px solid green;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.addBtn svg{
+    font-size: 1.2rem;
+}
+.addBtn:hover{
+    color: green;
+    background-color: #fff;
+}
+.img{
+    width: 100%;
+    border-radius: 10px;
+}

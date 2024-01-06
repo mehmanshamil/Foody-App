@@ -1,0 +1,52 @@
+footer {
+    padding: 25px;
+    background: rgb(255, 116, 4);
+    color: #fff;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style-type: none;
+
+}
+footer li::before {
+    content: ">";
+    position: absolute;
+    left: -20px;
+}
+footer li {
+    position: relative;
+    width: 7rem;
+    cursor: pointer;
+    transition: 1s;
+}
+
+footer li:hover {
+    margin-left: 10px;
+    color: black;
+}
+
+footer li:hover::after {
+    width: 100%;
+    background-color: black;
+}
+
+footer li:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    left: 0;
+    bottom: 0;
+    transition: 1s;
+}
+
+footer li::before {
+    content: ">";
+    position: absolute;
+    left: -20px;
+}
+

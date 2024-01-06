@@ -1,0 +1,128 @@
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+.box{
+    max-width: 300px;
+    transition: 1s;
+    padding: 10px;
+    margin: 1rem 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box:hover{
+    box-shadow: 0 2px 20px 0.2px gray;
+}
+.box img{
+    max-width: 200px;
+    height: 200px;
+    overflow: hidden;
+    object-fit: cover;
+}
+.buttons{
+ display: flex;
+ gap: 15px;
+ flex-wrap: wrap;
+}
+.order{
+    padding: 10px;
+    color: #fff;
+    background-color: green;
+    border-radius: 20px;
+    border: 1px solid green;
+    transition: 1s;
+    font-weight: 500;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.order:hover{
+    background-color: #fff;
+    color: green;
+}
+.remove{
+    padding: 10px;
+    color: #fff;
+    background-color: red;
+    border-radius: 20px;
+    border: 1px solid red;
+    transition: 1s;
+    font-weight: 500;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.remove:hover{
+    background-color: #fff;
+    color: red;
+}
+.searchProducts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgAnime{
+    display: none;
+}
+.src{
+    position: relative;
+}
+input,label {
+cursor: pointer;
+    
+}
+.srcInp{
+    width: 17rem;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 116, 4);
+}
+
+.backBtn{
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(255, 116, 4);
+    border-radius: 10px;
+    border: 1px solid rgb(255, 116, 4);
+    transition: 1s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.backBtn svg{
+    font-size: 1.2rem;
+}
+.backBtn:hover{
+    color: rgb(255, 116, 4);
+    background-color: #fff;
+}
+.srcIcon{
+    position: absolute;
+    padding: 10px 15px;
+    right: 0;
+    color: rgb(255, 116, 4);
+    border: 1px solid rgb(255, 116, 4);
+    border-radius: 20px;
+    transition: 1s;
+}
+.srcIcon:hover{
+    background-color: rgb(255, 116, 4);
+    color: #fff;
+}
+@media(max-width:570px){
+    .box img{
+        width: 100%;
+    }
+    .box {
+        width: 100%;
+    }
+    .srcInp{
+        width: 100%;
+    }
+}

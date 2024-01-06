@@ -1,0 +1,100 @@
+.boxProduct {
+    width: 400px;
+    display: flex;
+    gap: 16px;
+    padding: 20px;
+}
+
+.boxProduct img {
+    width: 13rem;
+    height: 13rem;
+    transition: 1s;
+    border-radius: 50%;
+}
+
+.boxProduct:hover img {
+    border-radius: 10px;
+}
+
+
+#products .container {
+    gap: 20px;
+}
+
+#products p {
+    color: rgb(255, 116, 4);
+    font-size: 1.2rem;
+}
+
+.productTitle{
+ text-align: center;
+ letter-spacing: 3px;
+ font-weight: bold;
+ margin: 1rem 0;
+}
+#headProduct {
+    gap: 27px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#headProduct .more {
+    background-color: #fff;
+    padding: 10px;
+    color: rgb(255, 116, 4);
+    transition: 1s;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 116, 4);
+}
+
+#headProduct .more:hover {
+    color: #fff;
+    background-color: rgb(255, 116, 4);
+}
+.addBtn{
+    color: #fff;
+    padding: 10px;
+    background-color: green;
+    transition: 1s;
+    border-radius: 20px;
+    border: 1px solid green;
+    margin: 1rem 0;
+
+}
+
+.addBtn:hover {
+    background-color: #fff;
+    color: green;
+
+}
+#loadBtn{
+color: #fff;
+background-color: black;
+padding: 10px;
+border: 1px solid black;
+transition: 1s;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5px;
+border-radius: 10px;
+}
+#loadBtn:hover{
+    background-color: #fff;
+    color: black;
+}
+
+@media (max-width:576px) {
+    .boxProduct img {
+        width: 100%;
+
+    }
+
+    .boxProduct {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+}
