@@ -1,11 +1,11 @@
 import React from 'react'
-import Main from './Companents/Main/Main'
+import Main from './Components/Main/Main'
 import { BrowserRouter, Routes, Route, } from "react-router-dom"
-import Detail from "./Companents/Detail/Detail"
+import Detail from "./Components/Detail/Detail"
 // import Header from './Companents/Header/Header'
-import Basket from './Companents/Basket/Basket'
-import Header from './Companents/Header/Header.jsx'
-import Footer from './Companents/Footer/Footer.jsx'
+import Basket from './Components/Basket/Basket'
+import Header from './Components/Header/Header.jsx'
+import Footer from './Components/Footer/Footer.jsx'
 
 const App = () => {
   return (

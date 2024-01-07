@@ -2,9 +2,9 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import styles from "../Head.module.css";
 // photo
-import photo1 from "../../../Companents/Image/hero_2.jpg";
-import photo2 from "../../../Companents/Image/Yemek-Menü-Fotoğrafçisi.jpg";
-import photo3 from "../../../Companents/Image/yemek-fotografi-cekim-teknikleri.jpg";
+import photo1 from "../../../Components/Image/hero_2.jpg";
+import photo2 from "../../../Components/Image/Yemek-Menü-Fotoğrafçisi.jpg";
+import photo3 from "../../../Components/Image/yemek-fotografi-cekim-teknikleri.jpg";
 
 const MyCarousel = () => {
   return (
