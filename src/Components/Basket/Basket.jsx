@@ -45,8 +45,6 @@ const Basket = () => {
 
   const orderFunc = () => {
     imgref.current.style.display = "block";
-
-    
     setTimeout(() => {
       imgref.current.style.display = "none";
       

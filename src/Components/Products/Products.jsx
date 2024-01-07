@@ -6,7 +6,7 @@ import { FaCartShopping } from "react-icons/fa6";
 import { FaArrowCircleLeft } from "react-icons/fa";
 
 const Products = () => {
-  const [page, setpage] = useState(1);
+  const [skip, setskip] = useState(1);
   const [limit, setlimit] = useState(3);
   const [alldata, setAllData] = useState();
   const [loading, setLoading] = useState(true);
@@ -24,7 +24,7 @@ const Products = () => {
     const getApi = async () => {
       setLoading(true);
       const { data } = await axios.get(
-        `https://dummyjson.com/products?page=${page}&limit=${limit}`
+        `https://dummyjson.com/products?limit=${limit}&skip=${skip}`
       );
       console.log(data.products);
       // setAllData(data.products);
@@ -32,7 +32,6 @@ const Products = () => {
       setAllData((prevData) => {
         if (prevData) {
           return [...prevData, ...data.products];
-
         } else {
           return [...data.products];
         }
@@ -40,7 +39,7 @@ const Products = () => {
       setLoading(false);
     };
     getApi();
-  }, [page]);
+  }, [skip]);
 
   return loading ? (
     <h3 className="text-center">Loading...</h3>
@@ -74,12 +73,15 @@ const Products = () => {
         </div>
 
         <div className="container d-flex justify-content-end my-5">
-        <button onClick={() => {
-        setpage((page) => page + 1);
-        setlimit((limit) => limit + 6);
-      }} id={styles.loadBtn}>
-        <FaArrowCircleLeft /> Load More
-      </button>
+          <button
+            onClick={() => {
+              setskip((skip) => skip + 1);
+              setlimit((limit) => limit + 6);
+            }}
+            id={styles.loadBtn}
+          >
+            <FaArrowCircleLeft /> Load More
+          </button>
         </div>
       </div>
     </>

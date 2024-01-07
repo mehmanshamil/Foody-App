@@ -16,7 +16,7 @@ const App = () => {
         <Route path='/detail/:id' element={<Detail />} />
         <Route path='/basket' element={<Basket />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   )
 }
